@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     startTransition(async () => {
       try {
-        const response = await fetch("/api/checkName", {
+        const response = await fetch(`/api/checkName?name=${"Nour El Din"}`, {
           headers: {
             "Content-Type": "application/json",
           },
